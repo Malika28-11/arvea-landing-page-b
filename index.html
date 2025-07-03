@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Invitation vers le programme d’affiliation ARVEA – en toute élégance.">
+  <title>ARVEA – L’appel de l’invisible</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-color: #c89ad7;
+      --bg-color: #fef9ff;
+      --text-color: #2e1f31;
+      --accent: #9146ff;
+    }
+
+    body {
+      font-family: 'Tajawal', sans-serif;
+      margin: 0;
+      background: var(--bg-color);
+      color: var(--text-color);
+      overflow-x: hidden;
+    }
+
+    [dir="rtl"] {
+      direction: rtl;
+      text-align: right;
+    }
+
+    [dir="ltr"] {
+      direction: ltr;
+      text-align: left;
+    }
+
+    header {
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .subtitle {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .steps-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .step {
+      background: white;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+
+    .step .emoji {
+      font-size: 2rem;
+    }
+
+    a.btn-royal {
+      display: inline-block;
+      background: linear-gradient(90deg, var(--accent), var(--main-color));
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 999px;
+      text-transform: uppercase;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-top: 2rem;
+    }
+
+    a.btn-royal:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px var(--main-color);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      opacity: 0.6;
+      padding: 2rem 1rem;
+    }
+
+    .lang-selector {
+      text-align: right;
+      margin: 1rem 1.5rem 0 0;
+    }
+
+    .lang-selector select {
+      padding: 0.5rem;
+      border-radius: 5px;
+      font-family: inherit;
+      border: 1px solid #ccc;
+    }
+
+    @media (min-width: 768px) {
+      .steps-container {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .step {
+        width: 30%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="lang-selector">
+    <label for="langSelect">🌍</label>
+    <select id="langSelect">
+      <option value="fr">Français</option>
+      <option value="ar">العربية</option>
+      <option value="en">English</option>
+    </select>
+  </div>
+
+  <header>
+    <h1 data-key="title">Et si ce n’était pas un hasard ?</h1>
+    <p class="subtitle" data-key="subtitle">
+      Tu es ici pour une raison. Ce que tu t’apprêtes à découvrir n’est pas une simple opportunité…
+    </p>
+  </header>
+
+  <section>
+    <h2 data-key="whyNowTitle">Ce monde change. Et toi ?</h2>
+    <p data-key="whyNowText">Tu sens qu’il est temps de faire autrement. De créer sans t’épuiser. De partager sans t’exposer.</p>
+  </section>
+
+  <section>
+    <h2 data-key="journeyTitle">Ton voyage commence ici</h2>
+    <div class="steps-container">
+      <div class="step">
+        <span class="emoji">🌿</span>
+        <h3 data-key="step1Title">Écoute l’appel</h3>
+        <p data-key="step1Text">Tu es attirée par quelque chose que tu ne peux pas nommer. C’est le premier signe.</p>
+      </div>
+      <div class="step">
+        <span class="emoji">🌸</span>
+        <h3 data-key="step2Title">Réponds</h3>
+        <p data-key="step2Text">Tu choisis une voie d’élégance invisible.</p>
+      </div>
+      <div class="step">
+        <span class="emoji">🔥</span>
+        <h3 data-key="step3Title">Rayonne</h3>
+        <p data-key="step3Text">Tu gagnes, tu transmets, tu attires.</p>
+      </div>
+    </div>
+
+    <a href="TON-LIEN-AFFILIATION" class="btn-royal" data-key="cta">Je suis prête à franchir le seuil</a>
+  </section>
+
+  <footer>
+    <p data-key="footer">© 2025 – Guidée par la lumière. Créé avec amour par Malika.</p>
+  </footer>
+
+  <script>
+    const translations = {
+      fr: {
+        title: "Et si ce n’était pas un hasard ?",
+        subtitle: "Tu es ici pour une raison. Ce que tu t’apprêtes à découvrir n’est pas une simple opportunité…",
+        whyNowTitle: "Ce monde change. Et toi ?",
+        whyNowText: "Tu sens qu’il est temps de faire autrement. De créer sans t’épuiser. De partager sans t’exposer.",
+        journeyTitle: "Ton voyage commence ici",
+        step1Title: "Écoute l’appel",
+        step1Text: "Tu es attirée par quelque chose que tu ne peux pas nommer. C’est le premier signe.",
+        step2Title: "Réponds",
+        step2Text: "Tu choisis une voie d’élégance invisible.",
+        step3Title: "Rayonne",
+        step3Text: "Tu gagnes, tu transmets, tu attires.",
+        cta: "Je suis prête à franchir le seuil",
+        footer: "© 2025 – Guidée par la lumière. Créé avec amour par Malika."
+      },
+      ar: {
+        title: "هل تظنين أن وجودك هنا صدفة؟",
+        subtitle: "أنتِ هنا لهدف. ما ستكتشفينه ليس مجرد فرصة، بل دعوة للنهوض بأنوثتك ورسالتك.",
+        whyNowTitle: "العالم يتغير... وأنتِ؟",
+        whyNowText: "ربما حان الوقت للخلق دون تعب، للمشاركة دون تعرٍّ، وللتألق دون تبرير.",
+        journeyTitle: "رحلتك تبدأ من هنا",
+        step1Title: "استمعي للنداء",
+        step1Text: "تشعرين بانجذاب لا تستطيعين تسميته. هذا هو الإشارة الأولى.",
+        step2Title: "أجيبي",
+        step2Text: "أنتِ تختارين طريقاً من الأناقة الخفية.",
+        step3Title: "تألّقي",
+        step3Text: "تكسبين، تنشرين، وتجذبين دون سعي.",
+        cta: "أنا مستعدة لعبور العتبة",
+        footer: "© 2025 – بدافع من النور. صُنع بحب على يد مليكة."
+      },
+      en: {
+        title: "What if it wasn’t a coincidence?",
+        subtitle: "You’re here for a reason. What you’re about to discover is not just an opportunity…",
+        whyNowTitle: "The world is changing. And you?",
+        whyNowText: "You feel it’s time to do things differently. To create without burning out. To share without exposing yourself.",
+        journeyTitle: "Your journey begins here",
+        step1Title: "Hear the call",
+        step1Text: "You’re drawn to something you can’t name. That’s the first sign.",
+        step2Title: "Respond",
+        step2Text: "You’re choosing a path of elegant invisibility.",
+        step3Title: "Shine",
+        step3Text: "You earn, you transmit, you attract.",
+        cta: "I’m ready to cross the threshold",
+        footer: "© 2025 – Guided by light. Created with love by Malika."
+      }
+    };
+
+    const langSelect = document.getElementById('langSelect');
+    langSelect.addEventListener('change', (e) => {
+      const lang = e.target.value;
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+      document.querySelectorAll('[data-key]').forEach(el => {
+        const key = el.getAttribute('data-key');
+        el.textContent = translations[lang][key];
+      });
+    });
+  </script>
+
+</body>
+</html>
